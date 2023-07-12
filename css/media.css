@@ -1,0 +1,244 @@
+@media (max-width: 1550px) {
+  .films_inline_inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+  }
+  .block__img {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .header__bottom {
+    justify-content: center;
+  }
+  .right {
+    right: 0;
+    position: absolute;
+  }
+  .left {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .block__img {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gallery__menu-nav ul {
+    width: 109%;
+  }
+}
+@media (max-width: 1050px) {
+  .gallery__menu-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: 20px;
+  }
+  .gallery__menu-nav ul li a,
+  .gallery__menu-nav ul li {
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  /* #genre:after {
+    content: "\e904";
+    font-family: "icomoon";
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 15%;
+  } */
+  .gallery__menu-nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  .container__bar {
+    display: block;
+  }
+  .gallery__icon {
+    top: -37px;
+  }
+
+  .burger__menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 9;
+    width: 40%;
+    height: 100%;
+    background-color: #a87214;
+    border-right: 2px solid #fff;
+    left: -40%;
+    transition: 0.8s;
+  }
+  .active {
+    left: 0;
+  }
+  .menu__night {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -60%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -100;
+    width: 60%;
+  }
+
+  .menu__night-opacity {
+    right: 0;
+    transition: 1s;
+  }
+}
+@media (max-width: 850px) {
+  .films_inline_inner,
+  .block__img {
+    grid-template-columns: 1fr;
+    grid-template-rows: 550px;
+  }
+  .receive__text {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  [data-fs-scroll] .page.vertical {
+    right: -40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text__title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+  .text__genre p {
+    line-height: 30px;
+  }
+  .text__genre p {
+    font-size: 21px;
+    letter-spacing: 0.4px;
+    display: inline-block;
+    padding: 15px 0 9px 0;
+    font-weight: 300;
+    margin-left: 0;
+  }
+  .button__watch,
+  .button__info {
+    margin-right: 19px;
+    padding: 2px 12px;
+    font-size: 24px;
+  }
+  .button__fovorites {
+    padding: 7px 23px;
+    font-size: 24px;
+  }
+  .text__find .find__button {
+    padding: 8px 21px;
+  }
+  [data-fs-scroll] .page.vertical {
+    right: -69px;
+    top: 38%;
+  }
+}
+
+@media (max-width: 500px) {
+  .find__button-first:before {
+    left: -22px;
+  }
+
+  .text__find .find__button {
+    font-size: 24px;
+  }
+  .find__button-first:before {
+    font-family: "icomoon";
+    content: "\e903";
+    position: absolute;
+    left: -22px;
+  }
+  .text__title {
+    font-size: 45px;
+  }
+  .text__genre p {
+    font-size: 1rem;
+    padding: 16px 0 7px 0;
+    margin-left: 5px;
+  }
+} 
+/*click*/
+@media (max-width: 1350px) {
+  .textBox-content,
+  .textBox-actors {
+    -webkit-line-clamp: 4;
+  }
+  .textBox-top .textBox-top_name a{
+    font-size: 37px;
+  }
+}
+@media (max-width: 1200px) {
+  .textBox-top_information a{
+    font-size: 25px;
+  }
+  .textBox-top_name,
+  .textBox-top_information {
+    line-height: 41px;
+  }
+  .textBox-top_name {
+    font-size: 30px;
+  }
+  .textBox-content,
+  .textBox-actors {
+    -webkit-line-clamp: 3;
+  }
+  .textBox-top .textBox-top_name a{
+    font-size: 35px;
+  }
+}
+@media (max-width: 1000px) {
+  .textBox-top_name, .textBox-top_information {
+    line-height: 36px;
+  }
+  .textBox-top_information{
+    font-size: 25px;
+  }
+}
+@media (max-width: 890px) {
+  .block_whith_textBox {
+    display: none;
+  }
+  .block_img_out{
+    justify-content: space-around;
+  }
+  .block_img_click{
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .textBox-top_name,
+  .textBox-top_information {
+    line-height: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .text__title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+}
+
+/*click*/

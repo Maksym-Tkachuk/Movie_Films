@@ -1,0 +1,50 @@
+[data-fs-scroll] .page {
+  position: absolute;
+  right: 0;
+  list-style: none;
+}
+
+[data-fs-scroll] .page.vertical {
+  z-index: 40;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+[data-fs-scroll] .page.horizontal {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+[data-fs-scroll] .page li {
+  width: 6px;
+  height: 30px;
+  background: rgba(191, 186, 186, 0.6);
+  margin: 20px 100px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+[data-fs-scroll] .page li.active {
+
+  background: #0aaee4;
+}
+
+[data-fs-scroll] .page.horizontal li {
+  display: inline-block;
+}
+
+[data-fs-scroll] .page.horizontal .active{
+  width: 6px;
+}
+
+[data-fs-scroll] .page.vertical .active {
+  height: 26px;
+}
